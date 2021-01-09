@@ -13,7 +13,7 @@ namespace GPSD2Com
     Thread thTCPReadThread;
     public delegate void UpdateTextbox(string sText);
     public UpdateTextbox UpdateTextboxDelegate;
-    private volatile bool bTerminateTCPThread = false;
+    private volatile bool bTerminateTCPThread = true;
     private volatile bool bLogging = false;
 
     TcpClient tcpClient;
